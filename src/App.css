@@ -1,0 +1,106 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo_name {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.ls {
+  position: relative;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.ls:hover {
+  color: white;
+}
+
+.ls::after {
+  position: absolute;
+  top: 22px;
+  left: 2px;
+  width: 0%;
+  height: 1px;
+  content: "";
+  background-color: white;
+  transition: 0.2s linear;
+}
+
+/* .ls:hover::after {
+    width: 100%;
+} */
+
+.hamburger {
+  animation: rotate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1000ms;
+}
+
+.hero_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.text_font {
+  font-family: "PT Serif", serif;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -3.5rem;
+  width: 30%;
+  height: 2px;
+  margin-top: -1px;
+  background: #fffbfb;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-family: "PT Serif", serif;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -3.5rem;
+    width: 30%;
+    height: 2px;
+    margin-top: -1px;
+    background: #fffbfb;
+  }
+
+  .designPage{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-evenly;
+  }
+
+  .designCards{
+    display: grid;
+    grid-template-columns: 35% 75%;
+    justify-content: space-evenly;
+  }
+  
